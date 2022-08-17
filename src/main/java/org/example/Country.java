@@ -16,8 +16,4 @@ public class Country {
     public char getCountrySign() {
         return countrySign;
     }
-
-    public void printCountryNameAndSign() {
-        System.out.println(getCountryName() + " - " + getCountrySign());
-    }
 }

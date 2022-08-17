@@ -13,11 +13,4 @@ public class Producent {
         return model;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void printModelAndType() {
-        System.out.println(getModel() + " " + getType());
-    }
 }

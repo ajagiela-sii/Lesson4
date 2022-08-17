@@ -12,4 +12,8 @@ public class Market {
     public List<Country> getCountries() {
         return countries;
     }
+
+    public void printCountryList() {
+        System.out.println("Market: " + getCountries().stream().map(country -> country.getCountryName() + " - " + country.getCountrySign()).toList());
+    }
 }

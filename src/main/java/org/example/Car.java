@@ -48,10 +48,12 @@ public class Car {
     }
 
     private static void printCarsCountryNameAndSign(Set<Car> carsAfterFiltration) {
-        carsAfterFiltration
-                .forEach(car -> {
-                    car.getProducent().printModelAndType();
-                    car.getMarket().getCountries().forEach(Country::printCountryNameAndSign);
-                });
+        if (!carsAfterFiltration.isEmpty()) {
+            carsAfterFiltration
+                    .forEach(car -> car.getMarket().printCountryList());
+        } else {
+            System.out.println("Car list is empty");
+        }
+
     }
 }
